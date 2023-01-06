@@ -270,15 +270,29 @@ section.desc{
 
 .products{
     background-color: rgba(138, 122, 122, 0.055);
+    padding-top: 50px;
+
+    &--header{
+        padding-bottom: 50px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+       
+        
+    }
+    
     
     
     .container{
+        border-top: 3px solid rgba(83, 80, 80, 0.336);
         width: 70%;
+        padding-top: 40px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         row-gap: 20px;
+        place-items: center;
     }
     .product{
         width: 250px;
@@ -286,7 +300,10 @@ section.desc{
         height: 450px;
         overflow: hidden;
         margin-bottom: 20px;
-        // background-color:red;
+        transition: .3s ease-in;
+        &:hover{
+            transform: scale(1.05);
+        }
 
         img{
             width: 250px;
@@ -309,7 +326,7 @@ section.desc{
 
 
 .footer{
-    padding: 0  400px;
+    padding: 0  270px;
     
     .footer--head{
         padding: 40px 0;
@@ -365,6 +382,18 @@ section.desc{
         
     }
 }
+
+
+section.images{
+    padding: 80px 0;
+    .images--container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
 
 
 .blue-text{
